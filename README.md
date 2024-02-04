@@ -21,7 +21,7 @@ local name = "Xapj";
 local ownerid = "MKS500Xxla";
 local version = "1.0";
 
-local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. Name .. '&ownerid=' .. Ownerid .. '&type=init&ver=' .. APPVersion)
+local req = game:HttpGet('https://keyauth.win/api/1.1/?name=' .. name .. '&ownerid=' .. ownerid .. '&type=init&ver=' .. version)
 
 if req == "KeyAuth_Invalid" then 
    print(" Error: Application not found.")
