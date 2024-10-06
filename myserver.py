@@ -5,8 +5,11 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "Server is runing"
+    return "Server is running!"
+
 def run():
-    app.run(host='0.0.0.0',port=8080)
-    
-degf server_on(0)
+  app.run(host='0.0.0.0',port=8080)
+
+def server_on():
+    t = Thread(target=run)
+    t.start()
